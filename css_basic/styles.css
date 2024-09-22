@@ -1,1 +1,54 @@
-
+/* Make the body a flex container and stack items vertically */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Ensure body takes full viewport height */
+    margin: 0; /* Remove default margin */
+  }
+  
+  /* Make the main section a flex container and stack items horizontally */
+  main {
+    display: flex;
+    flex-direction: row;
+    flex: auto; /* Allow main to grow and shrink as needed */
+  }
+  
+  /* Ensure the article takes 2/3 of the width and aside takes 1/3 */
+  article {
+    flex: 2;
+    overflow-y: auto; /* Enable vertical scroll */
+  }
+  
+  aside {
+    flex: 1;
+    overflow-y: auto; /* Enable vertical scroll */
+  }
+  
+  /* Ensure header and footer take their natural height */
+  header, footer {
+    flex: 0 0 auto; /* Do not grow or shrink */
+  }
+  body {
+    font-family: Arial, sans-serif; /* Change font for better readability */
+    color: #333; /* Set text color */
+    background-color: #f4f4f4; /* Light background color */
+  }
+  
+  header {
+    background-color: #333; /* Dark background for header */
+    color: #fff; /* White text in header */
+    padding: 1rem; /* Add some padding */
+  }
+  
+  footer {
+    background-color: #333; /* Dark background for footer */
+    color: #fff; /* White text in footer */
+    padding: 1rem; /* Add some padding */
+    text-align: center; /* Center text */
+  }
+  
+  .logo {
+    font-size: 2rem; /* Make logo larger */
+    margin-right: 10px; /* Space between logo and text */
+  }
+  
